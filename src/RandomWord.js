@@ -24,7 +24,7 @@ function RandomWord() {
     });
   }
   return <div className='RandomWord'>
-            <button onClick={search} ><h2>Click toget random word</h2></button>
+            <button onClick={search} ><h2>Click to get random word</h2></button>
             <h1>{data.word}</h1>
         </div>;
 }

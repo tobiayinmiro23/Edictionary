@@ -44,14 +44,13 @@ export const Random = ({ setloading, setdataReady, setresult, seterror }: Ifetch
     };
 
     axios.request(options).then(res => {
-        //   setdata(res.data)
         let word = res?.data?.word
         console.log(word)
         Fetch({ setloading, setdataReady, setresult, seterror, word })
     })
         .catch(function (error) {
             seterror(true)
-            console.log(error)
+           setloading(false)
 
         });
 }

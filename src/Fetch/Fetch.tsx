@@ -12,7 +12,7 @@ export const Fetch = ({ setloading, setdataReady, setresult, seterror, word }: I
         url: `https://wordsapiv1.p.rapidapi.com/words/${word}`,
         headers: {
             'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
-            'x-rapidapi-key': 'fea6df6911mshc1fa3c57903fe58p1dc20bjsn7f6c867a7511'
+            'x-rapidapi-key': process.env.API_KEY
         }
     };
     axios.request(options).then(res => {
@@ -39,7 +39,7 @@ export const Random = ({ setloading, setdataReady, setresult, seterror }: Ifetch
         params: { random: 'true' },
         headers: {
             'x-rapidapi-host': 'wordsapiv1.p.rapidapi.com',
-            'x-rapidapi-key': 'fea6df6911mshc1fa3c57903fe58p1dc20bjsn7f6c867a7511'
+            'x-rapidapi-key': process.env.API_KEY
         }
     };
 

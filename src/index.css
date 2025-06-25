@@ -47,7 +47,7 @@ body {
 
 .current {
   color: #4f68f7;
-  border-bottom: 4px solid #4f68f7;
+/*   border-bottom: 4px solid #4f68f7; */
   cursor: pointer;
 }
 

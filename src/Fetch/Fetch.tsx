@@ -7,7 +7,7 @@ export const Fetch = ({ setloading, setdataReady, setresult, seterror, word }: I
     setresult(null)
     seterror(false)
     console.log(word)
-    const options = {
+    const options = {                      
         method: 'GET',
         url: `https://wordsapiv1.p.rapidapi.com/words/${word}`,
         headers: {
